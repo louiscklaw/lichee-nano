@@ -1,5 +1,8 @@
 dist: bionic
 
+script:
+  - bash build.sh
+
 after_success:
   - id
   - sudo apt update
