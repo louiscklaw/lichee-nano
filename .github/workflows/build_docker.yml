@@ -14,6 +14,9 @@ jobs:
     - name: docker login
       run: cat ${{ secrets.DOCKER_PASS }} | docker login --username logickee --password-stdin
 
+    - name: push docker image
+      run: docker push logickee/lichee-nano:latest
+
   slack-notifications:
     runs-on: ubuntu-latest
     name: Sends a message to Slack when a push, a pull request or an issue is made
