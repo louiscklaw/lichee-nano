@@ -11,6 +11,9 @@ jobs:
     - name: Run a one-line script
       run: bash build.sh
 
+    - name: docker login
+      run: cat ${{ secrets.DOCKER_PASS }} | docker login --username logickee --password-stdin
+
   slack-notifications:
     runs-on: ubuntu-latest
     name: Sends a message to Slack when a push, a pull request or an issue is made
