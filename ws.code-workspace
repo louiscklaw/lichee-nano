@@ -1,10 +1,16 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": "/home/logic/_workspace/licheenano-linux-build"
+		},
+		{
+			"path": "/home/logic/_workspace/lichee-nano"
 		},
 		{
 			"path": "/home/logic/_workspace/travis-playlist"
+		},
+		{
+			"path": "/home/logic/_workspace/github-playlist"
 		}
 	],
 	"settings": {}
