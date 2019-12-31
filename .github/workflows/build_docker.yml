@@ -1,4 +1,4 @@
-name: build_all
+name: build_docker_image
 
 on: [push]
 
@@ -6,7 +6,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
+
     - name: Run a one-line script
       run: bash build.sh
 
